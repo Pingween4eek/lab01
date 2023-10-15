@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main(){
 double x, y, u;
@@ -12,10 +13,12 @@ if (u > max_u){
 max_u = u;
 max_x = x;
 max_y = y;
+}
+ 
+//printf("x: %lf, y: %lf, u: %lf\n", x, y, u);
 } 
 }
-printf("x: %lf, y: %lf, u: %lf", x, y, u); 
-}
+printf("U = %lf, x = %lf, y = %lf\n",max_u, max_x, max_y);
 
 return 0;
 }
